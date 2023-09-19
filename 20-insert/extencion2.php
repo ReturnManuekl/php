@@ -6,16 +6,16 @@
 
 <body>
   <?php
-  $conexion = mysqli_connect("localhost", "root", "", "base1") or
-    die("Problemas con la conexión");
+    $conexion = mysqli_connect("localhost", "root", "", "base1") or
+      die("Problemas con la conexión");
 
-  mysqli_query($conexion, "insert into cursos(nombrecurso) values 
-                       ('$_REQUEST[namecurso]')")
-    or die("Problemas en el select" . mysqli_error($conexion));
+    mysqli_query($conexion, "insert into cursos(nombrecurso) values 
+      ('$_REQUEST[namecurso]')")
+      or die("Problemas en el select" . mysqli_error($conexion));
 
-  mysqli_close($conexion);
+    mysqli_close($conexion);
 
-  echo "El curso fue dado de alta.";
+    echo "El curso fue dado de alta.";
   ?>
 </body>
 
