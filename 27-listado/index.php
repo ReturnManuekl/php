@@ -7,7 +7,7 @@
             Codigo del alumno:
             <input type="text" name="codigo" id="" /> 
             <br />
-            <input type="submit" value="confirmar">
+            <input type="submit" value="confirmar" />
         </form>
     </body>
 
